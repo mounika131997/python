@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- In order to use jQuery, you need to load it with a script tag -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#a1").on("click", function() {
+            $("div").css("background", "green");
+        });
+        $("#a2").on("click", function() {
+            $("div").css("border-radius", "20px");
+        });
+        $("#a3").on("click", function() {
+            $("body").append('<div></div>');
+        });
+    });
+    </script>
+    <style>
+        div
+        {
+            border:3px solid black;
+            height:120;
+            width: 120;
+            float: left;
+        }
+        #a1
+        {
+            margin-top: 180px;
+        }
+    </style>
+</head>
+    <body>
+
+        <div id="b1">
+        </div>
+        <button id="a1">Color</button>
+        <button id="a2">Shape</button>
+        <button id="a3">Add</button>
+        </body>
+ 
